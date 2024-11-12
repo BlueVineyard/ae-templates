@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+$ae-admin-color: #ff8200;
+
+.employer-slider-container {
+  padding: 0 20px 40px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  /* Custom Swiper Button Styling */
+  .custom-swiper-button-next,
+  .custom-swiper-button-prev {
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 4px 40px 0 rgba($color: #000000, $alpha: 0.06);
+    border-radius: 50px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .custom-swiper-button-next {
+    right: 0px;
+  }
+
+  .custom-swiper-button-prev {
+    left: 0px;
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background-color: #fcd9b4;
+      opacity: 1;
+      &-active {
+        background-color: $ae-admin-color;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .employer-slide {
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    padding: 20px 16px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    &__img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    &__placeholder {
+      width: 100px;
+      height: 100px;
+      background-color: $ae-admin-color;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: bold;
+      border-radius: 50%;
+    }
+    &__company {
+      font-size: 18px;
+      color: #101010;
+      font-family: "Noto Sans", sans-serif;
+      font-weight: 600;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    &__jobs {
+      font-family: "Noto Sans", sans-serif;
+      background-color: #e8fff4;
+      color: #17b86a;
+      border-radius: 300px;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 600;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+.category-filter-template #job-category-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 12px;
+  row-gap: 12px;
+  flex-wrap: wrap;
+}
+.category-filter-template #job-category-buttons .job-category-button {
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #fff;
+  color: #757b8a;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+.category-filter-template #job-category-buttons .job-category-button.active,
+.category-filter-template #job-category-buttons .job-category-button:hover {
+  background-color: #ff8200;
+  color: #fff;
+}
+.category-filter-template
+  #job-category-buttons
+  .job-category-button:focus-visible,
+.category-filter-template #job-category-buttons .job-category-button:focus {
+  outline: none;
+}
+
+#job-listings-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+  row-gap: 32px;
+  margin-top: 16px;
+}
+@media only screen and (max-width: 992px) {
+  #job-listings-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  #job-listings-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#job-listings-container .ae_job_card {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 8px;
+}
+#job-listings-container .ae_job_card-top {
+  display: flex;
+  /* align-items: center; */
+  column-gap: 16px;
+  margin-bottom: 24px;
+}
+#job-listings-container .ae_job_card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#job-listings-container .ae_job_card__img {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+#job-listings-container .ae_job_card__title {
+  color: #101010;
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  margin: 0;
+  line-height: 132%;
+  margin-bottom: 4px;
+}
+#job-listings-container .ae_job_card__title a {
+  color: #101010;
+  font-size: 20px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+}
+#job-listings-container .ae_job_card__company {
+  color: #3d3935;
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+#job-listings-container .ae_job_card__type {
+  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+#job-listings-container .ae_job_card__location {
+  display: flex;
+  align-items: center;
+  color: #3d3935;
+  column-gap: 5px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+#job-listings-container .ae_job_card__location span {
+  width: 100%;
+  max-width: calc(100% - 25px);
+}
+#job-listings-container .ae_job_card__salary {
+  display: flex;
+  align-items: center;
+  color: #3d3935;
+  column-gap: 5px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+#job-listings-container .ae_job_card__salary span {
+  width: 100%;
+  max-width: calc(100% - 25px);
+}
+#job-listings-container .ae_job_card hr {
+  border: 1px solid #e4e4e4;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+#job-listings-container .ae_job_card__published {
+  display: flex;
+  align-items: center;
+  color: #d83636;
+  column-gap: 6px;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+#job-listings-container .ae_job_card__modified {
+  color: #757b8a;
+  font-size: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+}
+#job-listings-container .ae_job_card svg {
+  width: 20px;
+}
+#job-listings-container .pagination {
+  grid-column: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 8px;
+}
+#job-listings-container .pagination .page-numbers {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e4e4e4;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #636363;
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+}
+#job-listings-container .pagination .page-numbers:hover {
+  background-color: #ff8200;
+  border-color: #ff8200;
+  color: #fff;
+}
+#job-listings-container .pagination .page-numbers.current {
+  background-color: #ff8200;
+  border-color: #ff8200;
+  color: #fff;
+}
+
+/*# sourceMappingURL=category-filter-style.css.map */
